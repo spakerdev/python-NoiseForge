@@ -73,8 +73,8 @@ Version:
 """
 
 from noiseforge.generator import (
-    deterministic_noise,
-    generate_noise
+    deterministicnoise,
+    generatenoise
 )
 
 from noiseforge.pngwriter import (
@@ -89,10 +89,10 @@ __author__ = "Spakerdev"
 __license__ = "MIT License"
 
 __all__ = [
-    "deterministic_noise",
-    "generate_noise",
-    "create_chunk",
-    "save_grayscale_png"
+    "deterministicnoise",
+    "generatenoise",
+    "createchunk",
+    "savepng"
 ]
 
 
