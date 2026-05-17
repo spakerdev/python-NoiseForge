@@ -2,7 +2,7 @@ import struct
 import zlib
 
 
-PNGSIGNATURE = b'\x89PNG\r\n\x1a\n'
+pngsignature = b'\x89PNG\r\n\x1a\n'
 
 
 def createchunk(chunktype, data):
@@ -29,6 +29,7 @@ def savepng(
     rawdata = b''
 
     for row in pixels:
+
         rawdata += b'\x00' + bytes(row)
 
     compressed = zlib.compress(rawdata)
@@ -46,7 +47,7 @@ def savepng(
 
     with open(filename, "wb") as file:
 
-        file.write(PNGSIGNATURE)
+        file.write(pngsignature)
 
         file.write(
             createchunk(
