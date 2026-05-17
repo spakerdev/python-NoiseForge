@@ -71,7 +71,7 @@ root = tk.Tk()
 
 root.title("NoiseForge")
 
-root.geometry("350x320")
+root.geometry("550x450")
 
 root.resizable(False, False)
 
@@ -133,7 +133,7 @@ generatebutton = tk.Button(
     text="Generate PNG",
     command=generateimage,
     width=20,
-    height=2,
+    height=5,
     font=("Arial", 10)
 )
 
